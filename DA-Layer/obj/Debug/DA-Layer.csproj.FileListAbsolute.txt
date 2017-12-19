@@ -1,0 +1,9 @@
+c:\Users\Phoenix\documents\visual studio 2013\Projects\Police\DA-Layer\bin\Debug\DA-Layer.dll
+c:\Users\Phoenix\documents\visual studio 2013\Projects\Police\DA-Layer\bin\Debug\DA-Layer.pdb
+c:\Users\Phoenix\documents\visual studio 2013\Projects\Police\DA-Layer\obj\Debug\DA-Layer.dll
+c:\Users\Phoenix\documents\visual studio 2013\Projects\Police\DA-Layer\obj\Debug\DA-Layer.pdb
+G:\Users\Phoenix\Documents\Visual Studio 2013\Projects\Police\DA-Layer\bin\Debug\DA-Layer.dll
+G:\Users\Phoenix\Documents\Visual Studio 2013\Projects\Police\DA-Layer\bin\Debug\DA-Layer.pdb
+G:\Users\Phoenix\Documents\Visual Studio 2013\Projects\Police\DA-Layer\obj\Debug\DA-Layer.csprojResolveAssemblyReference.cache
+G:\Users\Phoenix\Documents\Visual Studio 2013\Projects\Police\DA-Layer\obj\Debug\DA-Layer.dll
+G:\Users\Phoenix\Documents\Visual Studio 2013\Projects\Police\DA-Layer\obj\Debug\DA-Layer.pdb
