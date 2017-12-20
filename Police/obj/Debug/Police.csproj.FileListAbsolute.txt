@@ -44,3 +44,18 @@ C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Police\Police\obj\D
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Police\Police\obj\Debug\Police.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Police\Police\obj\Debug\Police.exe
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Police\Police\obj\Debug\Police.pdb
+E:\Git Project\Police\Police\bin\Debug\Police.exe.config
+E:\Git Project\Police\Police\obj\Debug\Police.exe
+E:\Git Project\Police\Police\obj\Debug\Police.pdb
+E:\Git Project\Police\Police\bin\Debug\Police.exe
+E:\Git Project\Police\Police\bin\Debug\Police.pdb
+E:\Git Project\Police\Police\bin\Debug\BL-Layer.dll
+E:\Git Project\Police\Police\bin\Debug\DA-Layer.dll
+E:\Git Project\Police\Police\bin\Debug\BL-Layer.pdb
+E:\Git Project\Police\Police\bin\Debug\DA-Layer.pdb
+E:\Git Project\Police\Police\obj\Debug\Police.csprojResolveAssemblyReference.cache
+E:\Git Project\Police\Police\obj\Debug\Police.FrmLoading.resources
+E:\Git Project\Police\Police\obj\Debug\Police.FrmLogin.resources
+E:\Git Project\Police\Police\obj\Debug\Police.FrmMain.resources
+E:\Git Project\Police\Police\obj\Debug\Police.Properties.Resources.resources
+E:\Git Project\Police\Police\obj\Debug\Police.csproj.GenerateResource.Cache
