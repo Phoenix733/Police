@@ -34,9 +34,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.circularProgressBar2 = new CircularProgressBar.CircularProgressBar();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.LblSec = new DevComponents.DotNetBar.LabelX();
+            this.LblDay = new DevComponents.DotNetBar.LabelX();
+            this.LblDate = new DevComponents.DotNetBar.LabelX();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
@@ -48,20 +48,22 @@
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
             this.styleManager2 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.ribbonClientPanel1 = new DevComponents.DotNetBar.Ribbon.RibbonClientPanel();
-            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.LblCode = new DevComponents.DotNetBar.LabelX();
+            this.LblUser = new DevComponents.DotNetBar.LabelX();
+            this.LblName = new DevComponents.DotNetBar.LabelX();
+            this.LblPermission = new DevComponents.DotNetBar.LabelX();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
-            this.ribbonClientPanel1.SuspendLayout();
+            this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
             this.btnCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnCancel.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btnCancel.Location = new System.Drawing.Point(289, 359);
+            this.btnCancel.Location = new System.Drawing.Point(302, 13);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(74, 41);
             this.btnCancel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -71,6 +73,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // circularProgressBar2
@@ -86,18 +89,18 @@
             this.circularProgressBar2.InnerColor = System.Drawing.Color.Transparent;
             this.circularProgressBar2.InnerMargin = 2;
             this.circularProgressBar2.InnerWidth = -1;
-            this.circularProgressBar2.Location = new System.Drawing.Point(3, 252);
+            this.circularProgressBar2.Location = new System.Drawing.Point(0, 122);
             this.circularProgressBar2.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar2.Maximum = 60;
             this.circularProgressBar2.Name = "circularProgressBar2";
-            this.circularProgressBar2.OuterColor = System.Drawing.Color.WhiteSmoke;
+            this.circularProgressBar2.OuterColor = System.Drawing.SystemColors.ActiveBorder;
             this.circularProgressBar2.OuterMargin = -25;
             this.circularProgressBar2.OuterWidth = 26;
             this.circularProgressBar2.ProgressColor = System.Drawing.Color.Blue;
             this.circularProgressBar2.ProgressWidth = 20;
             this.circularProgressBar2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.circularProgressBar2.SecondaryFont = new System.Drawing.Font("B Titr", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.circularProgressBar2.Size = new System.Drawing.Size(201, 193);
+            this.circularProgressBar2.Size = new System.Drawing.Size(183, 200);
             this.circularProgressBar2.StartAngle = 270;
             this.circularProgressBar2.SubscriptColor = System.Drawing.Color.Black;
             this.circularProgressBar2.SubscriptMargin = new System.Windows.Forms.Padding(0);
@@ -105,11 +108,10 @@
             this.circularProgressBar2.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.circularProgressBar2.SuperscriptMargin = new System.Windows.Forms.Padding(0);
             this.circularProgressBar2.SuperscriptText = "";
-            this.circularProgressBar2.TabIndex = 27;
+            this.circularProgressBar2.TabIndex = 10;
             this.circularProgressBar2.Text = "Time";
-            this.circularProgressBar2.TextMargin = new System.Windows.Forms.Padding(0, 0, 0, 100);
-            this.circularProgressBar2.Value = 60;
-            this.circularProgressBar2.Click += new System.EventHandler(this.circularProgressBar2_Click);
+            this.circularProgressBar2.TextMargin = new System.Windows.Forms.Padding(0, 0, 0, 90);
+            this.circularProgressBar2.Value = 30;
             // 
             // styleManager1
             // 
@@ -117,62 +119,62 @@
             this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2016;
             this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
             // 
-            // labelX1
+            // LblSec
             // 
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(94, 304);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelX1.SingleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.labelX1.Size = new System.Drawing.Size(23, 28);
-            this.labelX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.labelX1.TabIndex = 31;
-            this.labelX1.Text = "00";
-            this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // labelX2
-            // 
-            this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.LblSec.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Font = new System.Drawing.Font("B Titr", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(75, 338);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelX2.SingleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.labelX2.Size = new System.Drawing.Size(97, 38);
-            this.labelX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.labelX2.TabIndex = 32;
-            this.labelX2.Text = "Day";
+            this.LblSec.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LblSec.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LblSec.ForeColor = System.Drawing.Color.Black;
+            this.LblSec.Location = new System.Drawing.Point(79, 172);
+            this.LblSec.Name = "LblSec";
+            this.LblSec.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LblSec.SingleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.LblSec.Size = new System.Drawing.Size(23, 28);
+            this.LblSec.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.LblSec.TabIndex = 31;
+            this.LblSec.Text = "00";
+            this.LblSec.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // labelX3
+            // LblDay
             // 
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            this.LblDay.BackColor = System.Drawing.Color.Transparent;
+            this.LblDay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             // 
             // 
             // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX3.ForeColor = System.Drawing.Color.Black;
-            this.labelX3.Location = new System.Drawing.Point(49, 372);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelX3.SingleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.labelX3.Size = new System.Drawing.Size(89, 28);
-            this.labelX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.labelX3.TabIndex = 33;
-            this.labelX3.Text = "Date";
-            this.labelX3.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LblDay.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LblDay.Font = new System.Drawing.Font("B Titr", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LblDay.ForeColor = System.Drawing.Color.Black;
+            this.LblDay.Location = new System.Drawing.Point(50, 189);
+            this.LblDay.Name = "LblDay";
+            this.LblDay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LblDay.SingleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.LblDay.Size = new System.Drawing.Size(97, 38);
+            this.LblDay.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.LblDay.TabIndex = 32;
+            this.LblDay.Text = "Day";
+            // 
+            // LblDate
+            // 
+            this.LblDate.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.LblDate.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LblDate.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LblDate.ForeColor = System.Drawing.Color.Black;
+            this.LblDate.Location = new System.Drawing.Point(50, 223);
+            this.LblDate.Name = "LblDate";
+            this.LblDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LblDate.SingleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.LblDate.Size = new System.Drawing.Size(89, 28);
+            this.LblDate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.LblDate.TabIndex = 33;
+            this.LblDate.Text = "Date";
+            this.LblDate.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // ribbonControl1
             // 
@@ -196,7 +198,7 @@
             this.ribbonControl1.QuickToolbarItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem1,
             this.qatCustomizeItem1});
-            this.ribbonControl1.Size = new System.Drawing.Size(648, 154);
+            this.ribbonControl1.Size = new System.Drawing.Size(654, 154);
             this.ribbonControl1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonControl1.SystemText.MaximizeRibbonText = "&Maximize the Ribbon";
             this.ribbonControl1.SystemText.MinimizeRibbonText = "Mi&nimize the Ribbon";
@@ -221,11 +223,12 @@
             // 
             this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel1.Controls.Add(this.ribbonBar1);
+            this.ribbonPanel1.Controls.Add(this.btnCancel);
             this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ribbonPanel1.Location = new System.Drawing.Point(0, 55);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 2);
-            this.ribbonPanel1.Size = new System.Drawing.Size(648, 99);
+            this.ribbonPanel1.Size = new System.Drawing.Size(654, 99);
             // 
             // 
             // 
@@ -239,7 +242,6 @@
             // 
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 1;
-            this.ribbonPanel1.Click += new System.EventHandler(this.ribbonPanel1_Click);
             // 
             // ribbonBar1
             // 
@@ -298,7 +300,6 @@
             this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel2.TabIndex = 2;
             this.ribbonPanel2.Visible = false;
-            this.ribbonPanel2.Click += new System.EventHandler(this.ribbonPanel2_Click);
             // 
             // ribbonBar3
             // 
@@ -366,7 +367,6 @@
             this.ribbonTabItem1.Name = "ribbonTabItem1";
             this.ribbonTabItem1.Panel = this.ribbonPanel1;
             this.ribbonTabItem1.Text = "ribbonTabItem1";
-            this.ribbonTabItem1.Click += new System.EventHandler(this.ribbonTabItem1_Click);
             // 
             // ribbonTabItem2
             // 
@@ -389,58 +389,116 @@
             this.styleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2016;
             this.styleManager2.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
             // 
-            // labelX4
+            // groupPanel1
+            // 
+            this.groupPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.groupPanel1.CanvasColor = System.Drawing.Color.Transparent;
+            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.groupPanel1.Controls.Add(this.LblName);
+            this.groupPanel1.Controls.Add(this.LblPermission);
+            this.groupPanel1.Controls.Add(this.LblDate);
+            this.groupPanel1.Controls.Add(this.LblSec);
+            this.groupPanel1.Controls.Add(this.LblCode);
+            this.groupPanel1.Controls.Add(this.LblDay);
+            this.groupPanel1.Controls.Add(this.circularProgressBar2);
+            this.groupPanel1.Controls.Add(this.LblUser);
+            this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupPanel1.Font = new System.Drawing.Font("B Mitra", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupPanel1.Location = new System.Drawing.Point(467, 154);
+            this.groupPanel1.Name = "groupPanel1";
+            this.groupPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupPanel1.Size = new System.Drawing.Size(187, 332);
             // 
             // 
             // 
-            // 
-            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Font = new System.Drawing.Font("B Jadid", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX4.Location = new System.Drawing.Point(313, 252);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelX4.Size = new System.Drawing.Size(75, 37);
-            this.labelX4.TabIndex = 36;
-            this.labelX4.Text = "کاربر :";
-            this.labelX4.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // ribbonClientPanel1
-            // 
-            this.ribbonClientPanel1.CanvasColor = System.Drawing.Color.Transparent;
-            this.ribbonClientPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.ribbonClientPanel1.Controls.Add(this.labelX5);
-            this.ribbonClientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ribbonClientPanel1.Location = new System.Drawing.Point(448, 154);
-            this.ribbonClientPanel1.Name = "ribbonClientPanel1";
-            this.ribbonClientPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ribbonClientPanel1.Size = new System.Drawing.Size(200, 303);
+            this.groupPanel1.Style.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupPanel1.Style.BackColor2 = System.Drawing.SystemColors.ActiveBorder;
+            this.groupPanel1.Style.BackColorGradientAngle = 90;
+            this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderBottomWidth = 1;
+            this.groupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel1.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderLeftWidth = 1;
+            this.groupPanel1.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderRightWidth = 1;
+            this.groupPanel1.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderTopWidth = 1;
+            this.groupPanel1.Style.CornerDiameter = 4;
+            this.groupPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel1.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
             // 
-            this.ribbonClientPanel1.Style.Class = "RibbonClientPanel";
-            this.ribbonClientPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonClientPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel1.TabIndex = 36;
+            this.groupPanel1.Text = "اطلاعات کاربر";
+            // 
+            // LblCode
+            // 
+            this.LblCode.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
-            this.ribbonClientPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.ribbonClientPanel1.TabIndex = 37;
-            this.ribbonClientPanel1.Text = "ribbonClientPanel1";
+            this.LblCode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LblCode.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LblCode.Location = new System.Drawing.Point(-3, 96);
+            this.LblCode.Name = "LblCode";
+            this.LblCode.Size = new System.Drawing.Size(187, 23);
+            this.LblCode.TabIndex = 37;
+            this.LblCode.Text = "کد پرسنلی";
+            this.LblCode.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // labelX5
+            // LblUser
+            // 
+            this.LblUser.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
+            this.LblUser.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LblUser.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LblUser.Location = new System.Drawing.Point(-3, 9);
+            this.LblUser.Name = "LblUser";
+            this.LblUser.Size = new System.Drawing.Size(187, 23);
+            this.LblUser.TabIndex = 38;
+            this.LblUser.Text = "نام کاربری";
+            this.LblUser.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX5.Location = new System.Drawing.Point(113, 6);
-            this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(75, 23);
-            this.labelX5.TabIndex = 38;
-            this.labelX5.Text = "labelX5";
+            // LblName
+            // 
+            this.LblName.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.LblName.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LblName.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LblName.Location = new System.Drawing.Point(-3, 38);
+            this.LblName.Name = "LblName";
+            this.LblName.Size = new System.Drawing.Size(187, 23);
+            this.LblName.TabIndex = 39;
+            this.LblName.Text = "نام کاربر";
+            this.LblName.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // LblPermission
+            // 
+            this.LblPermission.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.LblPermission.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LblPermission.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LblPermission.Location = new System.Drawing.Point(-3, 67);
+            this.LblPermission.Name = "LblPermission";
+            this.LblPermission.Size = new System.Drawing.Size(187, 23);
+            this.LblPermission.TabIndex = 40;
+            this.LblPermission.Text = "سطح دسترسی";
+            this.LblPermission.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // FrmMain
             // 
@@ -448,15 +506,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(648, 457);
-            this.Controls.Add(this.ribbonClientPanel1);
-            this.Controls.Add(this.labelX4);
+            this.ClientSize = new System.Drawing.Size(654, 486);
+            this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.ribbonControl1);
-            this.Controls.Add(this.labelX3);
-            this.Controls.Add(this.labelX1);
-            this.Controls.Add(this.labelX2);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.circularProgressBar2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -468,7 +520,7 @@
             this.ribbonControl1.PerformLayout();
             this.ribbonPanel1.ResumeLayout(false);
             this.ribbonPanel2.ResumeLayout(false);
-            this.ribbonClientPanel1.ResumeLayout(false);
+            this.groupPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -477,11 +529,10 @@
 
         private DevComponents.DotNetBar.ButtonX btnCancel;
         private System.Windows.Forms.Timer timer1;
-        private CircularProgressBar.CircularProgressBar circularProgressBar2;
         private DevComponents.DotNetBar.StyleManager styleManager1;
-        private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.LabelX labelX2;
-        private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.LabelX LblSec;
+        private DevComponents.DotNetBar.LabelX LblDay;
+        private DevComponents.DotNetBar.LabelX LblDate;
         private DevComponents.DotNetBar.RibbonControl ribbonControl1;
         private DevComponents.DotNetBar.RibbonPanel ribbonPanel1;
         private DevComponents.DotNetBar.RibbonBar ribbonBar1;
@@ -491,10 +542,13 @@
         private DevComponents.DotNetBar.ButtonItem buttonItem1;
         private DevComponents.DotNetBar.QatCustomizeItem qatCustomizeItem1;
         private DevComponents.DotNetBar.StyleManager styleManager2;
-        private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.RibbonBar ribbonBar3;
         private DevComponents.DotNetBar.RibbonBar ribbonBar2;
-        private DevComponents.DotNetBar.Ribbon.RibbonClientPanel ribbonClientPanel1;
-        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
+        public CircularProgressBar.CircularProgressBar circularProgressBar2;
+        private DevComponents.DotNetBar.LabelX LblCode;
+        private DevComponents.DotNetBar.LabelX LblUser;
+        private DevComponents.DotNetBar.LabelX LblName;
+        private DevComponents.DotNetBar.LabelX LblPermission;
     }
 }

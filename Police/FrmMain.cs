@@ -17,8 +17,8 @@ namespace Police
         {
             InitializeComponent();
         }
-        MaftooxCalendar.MaftooxPersianCalendar.TimeWork prdTime = new MaftooxCalendar.MaftooxPersianCalendar.TimeWork();
-        MaftooxCalendar.MaftooxPersianCalendar.DateWork prd = new MaftooxCalendar.MaftooxPersianCalendar.DateWork();
+        MaftooxCalendar.MaftooxPersianCalendar.TimeWork PersianTime = new MaftooxCalendar.MaftooxPersianCalendar.TimeWork();
+        MaftooxCalendar.MaftooxPersianCalendar.DateWork PersianDate = new MaftooxCalendar.MaftooxPersianCalendar.DateWork();
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -40,39 +40,14 @@ namespace Police
         {
             DateTime DT = DateTime.Now;
             circularProgressBar2.Text = DT.Hour.ToString("00") + ":" + DT.Minute.ToString("00");
-            labelX1.Text = DT.Second.ToString("00");
+            LblSec.Text = DT.Second.ToString("00");
             circularProgressBar2.Value = DT.Second;
-            prdTime.Upate();
-            String stry = prd.GetNameMonth() + prd.GetNameDayInMonth();
-            if (prd.GetNameDayInMonth() == "سه شبه")
-                labelX2.Text = "سه شنبه"; 
+            PersianTime.Upate();
+            if (PersianDate.GetNameDayInMonth() == "سه شبه")
+                LblDay.Text = "سه شنبه"; 
             else
-                labelX2.Text = prd.GetNameDayInMonth();
-            labelX3.Text = prd.GetNumberDayInMonth().ToString() + "  " + prd.GetNameMonth() + "  " + prd.GetNumberYear().ToString();
-        }
-
-        private void circularProgressBar2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void applicationButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void ribbonPanel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ribbonPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ribbonTabItem1_Click(object sender, EventArgs e)
-        {
-
+                LblDay.Text = PersianDate.GetNameDayInMonth();
+            LblDate.Text = PersianDate.GetNumberDayInMonth().ToString() + "  " + PersianDate.GetNameMonth() + "  " + PersianDate.GetNumberYear().ToString();
         }
     }
 }
