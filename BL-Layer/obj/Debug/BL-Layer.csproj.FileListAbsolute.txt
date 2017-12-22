@@ -18,3 +18,10 @@ C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Police\BL-Layer\bin
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Police\BL-Layer\bin\Debug\DA-Layer.pdb
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Police\BL-Layer\obj\Debug\BL-Layer.dll
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Police\BL-Layer\obj\Debug\BL-Layer.pdb
+E:\Git Project\Police\BL-Layer\bin\Debug\BL-Layer.dll
+E:\Git Project\Police\BL-Layer\bin\Debug\BL-Layer.pdb
+E:\Git Project\Police\BL-Layer\bin\Debug\DA-Layer.dll
+E:\Git Project\Police\BL-Layer\bin\Debug\DA-Layer.pdb
+E:\Git Project\Police\BL-Layer\obj\Debug\BL-Layer.dll
+E:\Git Project\Police\BL-Layer\obj\Debug\BL-Layer.pdb
+E:\Git Project\Police\BL-Layer\obj\Debug\BL-Layer.csprojResolveAssemblyReference.cache

@@ -49,10 +49,10 @@
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
             this.styleManager2 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.LblCode = new DevComponents.DotNetBar.LabelX();
-            this.LblUser = new DevComponents.DotNetBar.LabelX();
             this.LblName = new DevComponents.DotNetBar.LabelX();
             this.LblPermission = new DevComponents.DotNetBar.LabelX();
+            this.LblCode = new DevComponents.DotNetBar.LabelX();
+            this.LblUser = new DevComponents.DotNetBar.LabelX();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
@@ -116,8 +116,8 @@
             // styleManager1
             // 
             this.styleManager1.ManagerColorTint = System.Drawing.Color.Transparent;
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2016;
-            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.OfficeMobile2014;
+            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(222)))), ((int)(((byte)(192))))), System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(67)))), ((int)(((byte)(32))))));
             // 
             // LblSec
             // 
@@ -178,7 +178,7 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.ribbonControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(222)))), ((int)(((byte)(192)))));
             this.ribbonControl1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ribbonControl1.BackgroundImage")));
             // 
             // 
@@ -218,6 +218,7 @@
             this.ribbonControl1.TabGroupHeight = 14;
             this.ribbonControl1.TabIndex = 35;
             this.ribbonControl1.Text = "ribbonControl1";
+            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // ribbonPanel1
             // 
@@ -225,10 +226,10 @@
             this.ribbonPanel1.Controls.Add(this.ribbonBar1);
             this.ribbonPanel1.Controls.Add(this.btnCancel);
             this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel1.Location = new System.Drawing.Point(0, 55);
+            this.ribbonPanel1.Location = new System.Drawing.Point(0, 61);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 2);
-            this.ribbonPanel1.Size = new System.Drawing.Size(654, 99);
+            this.ribbonPanel1.Size = new System.Drawing.Size(654, 93);
             // 
             // 
             // 
@@ -246,7 +247,7 @@
             // ribbonBar1
             // 
             this.ribbonBar1.AutoOverflowEnabled = true;
-            this.ribbonBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.ribbonBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(222)))), ((int)(((byte)(192)))));
             // 
             // 
             // 
@@ -262,7 +263,7 @@
             this.ribbonBar1.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F";
             this.ribbonBar1.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Size = new System.Drawing.Size(100, 97);
+            this.ribbonBar1.Size = new System.Drawing.Size(100, 91);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar1.TabIndex = 0;
             this.ribbonBar1.Text = "ribbonBar1";
@@ -281,11 +282,11 @@
             this.ribbonPanel2.Controls.Add(this.ribbonBar3);
             this.ribbonPanel2.Controls.Add(this.ribbonBar2);
             this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel2.Location = new System.Drawing.Point(0, 55);
+            this.ribbonPanel2.Location = new System.Drawing.Point(0, 61);
             this.ribbonPanel2.Name = "ribbonPanel2";
             this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 2);
             this.ribbonPanel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ribbonPanel2.Size = new System.Drawing.Size(648, 99);
+            this.ribbonPanel2.Size = new System.Drawing.Size(654, 93);
             // 
             // 
             // 
@@ -304,6 +305,7 @@
             // ribbonBar3
             // 
             this.ribbonBar3.AutoOverflowEnabled = true;
+            this.ribbonBar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(222)))), ((int)(((byte)(192)))));
             // 
             // 
             // 
@@ -315,10 +317,11 @@
             this.ribbonBar3.ContainerControlProcessDialogKey = true;
             this.ribbonBar3.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar3.DragDropSupport = true;
+            this.ribbonBar3.ForeColor = System.Drawing.Color.Black;
             this.ribbonBar3.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F";
             this.ribbonBar3.Location = new System.Drawing.Point(103, 0);
             this.ribbonBar3.Name = "ribbonBar3";
-            this.ribbonBar3.Size = new System.Drawing.Size(100, 97);
+            this.ribbonBar3.Size = new System.Drawing.Size(100, 91);
             this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar3.TabIndex = 1;
             this.ribbonBar3.Text = "ribbonBar3";
@@ -334,6 +337,7 @@
             // ribbonBar2
             // 
             this.ribbonBar2.AutoOverflowEnabled = true;
+            this.ribbonBar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(222)))), ((int)(((byte)(192)))));
             // 
             // 
             // 
@@ -345,10 +349,11 @@
             this.ribbonBar2.ContainerControlProcessDialogKey = true;
             this.ribbonBar2.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar2.DragDropSupport = true;
+            this.ribbonBar2.ForeColor = System.Drawing.Color.Black;
             this.ribbonBar2.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F";
             this.ribbonBar2.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar2.Name = "ribbonBar2";
-            this.ribbonBar2.Size = new System.Drawing.Size(100, 97);
+            this.ribbonBar2.Size = new System.Drawing.Size(100, 91);
             this.ribbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar2.TabIndex = 0;
             this.ribbonBar2.Text = "ribbonBar2";
@@ -386,13 +391,13 @@
             // styleManager2
             // 
             this.styleManager2.ManagerColorTint = System.Drawing.Color.Transparent;
-            this.styleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2016;
-            this.styleManager2.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
+            this.styleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.OfficeMobile2014;
+            this.styleManager2.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(222)))), ((int)(((byte)(192))))), System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(67)))), ((int)(((byte)(32))))));
             // 
             // groupPanel1
             // 
-            this.groupPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.groupPanel1.CanvasColor = System.Drawing.Color.Transparent;
+            this.groupPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(222)))), ((int)(((byte)(192)))));
+            this.groupPanel1.CanvasColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(222)))), ((int)(((byte)(192)))));
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.groupPanel1.Controls.Add(this.LblName);
             this.groupPanel1.Controls.Add(this.LblPermission);
@@ -440,6 +445,38 @@
             this.groupPanel1.TabIndex = 36;
             this.groupPanel1.Text = "اطلاعات کاربر";
             // 
+            // LblName
+            // 
+            this.LblName.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.LblName.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LblName.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LblName.ForeColor = System.Drawing.Color.Black;
+            this.LblName.Location = new System.Drawing.Point(-3, 9);
+            this.LblName.Name = "LblName";
+            this.LblName.Size = new System.Drawing.Size(187, 23);
+            this.LblName.TabIndex = 39;
+            this.LblName.Text = "نام کاربر";
+            this.LblName.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // LblPermission
+            // 
+            this.LblPermission.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.LblPermission.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LblPermission.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LblPermission.ForeColor = System.Drawing.Color.Black;
+            this.LblPermission.Location = new System.Drawing.Point(-3, 67);
+            this.LblPermission.Name = "LblPermission";
+            this.LblPermission.Size = new System.Drawing.Size(187, 23);
+            this.LblPermission.TabIndex = 40;
+            this.LblPermission.Text = "سطح دسترسی";
+            this.LblPermission.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
             // LblCode
             // 
             this.LblCode.BackColor = System.Drawing.Color.Transparent;
@@ -448,6 +485,7 @@
             // 
             this.LblCode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.LblCode.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LblCode.ForeColor = System.Drawing.Color.Black;
             this.LblCode.Location = new System.Drawing.Point(-3, 96);
             this.LblCode.Name = "LblCode";
             this.LblCode.Size = new System.Drawing.Size(187, 23);
@@ -463,42 +501,13 @@
             // 
             this.LblUser.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.LblUser.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.LblUser.Location = new System.Drawing.Point(-3, 9);
+            this.LblUser.ForeColor = System.Drawing.Color.Black;
+            this.LblUser.Location = new System.Drawing.Point(-3, 38);
             this.LblUser.Name = "LblUser";
             this.LblUser.Size = new System.Drawing.Size(187, 23);
             this.LblUser.TabIndex = 38;
             this.LblUser.Text = "نام کاربری";
             this.LblUser.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // LblName
-            // 
-            this.LblName.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.LblName.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.LblName.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.LblName.Location = new System.Drawing.Point(-3, 38);
-            this.LblName.Name = "LblName";
-            this.LblName.Size = new System.Drawing.Size(187, 23);
-            this.LblName.TabIndex = 39;
-            this.LblName.Text = "نام کاربر";
-            this.LblName.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // LblPermission
-            // 
-            this.LblPermission.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.LblPermission.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.LblPermission.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.LblPermission.Location = new System.Drawing.Point(-3, 67);
-            this.LblPermission.Name = "LblPermission";
-            this.LblPermission.Size = new System.Drawing.Size(187, 23);
-            this.LblPermission.TabIndex = 40;
-            this.LblPermission.Text = "سطح دسترسی";
-            this.LblPermission.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // FrmMain
             // 

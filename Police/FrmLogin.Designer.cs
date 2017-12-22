@@ -53,6 +53,7 @@
             // 
             // styleManager1
             // 
+            this.styleManager1.ManagerColorTint = System.Drawing.Color.Transparent;
             this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.OfficeMobile2014;
             this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(222)))), ((int)(((byte)(192))))), System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(67)))), ((int)(((byte)(32))))));
             // 
@@ -63,9 +64,10 @@
             this.ribbonClientPanel1.Controls.Add(this.groupPanel1);
             this.ribbonClientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ribbonClientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonClientPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ribbonClientPanel1.Name = "ribbonClientPanel1";
             this.ribbonClientPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ribbonClientPanel1.Size = new System.Drawing.Size(430, 289);
+            this.ribbonClientPanel1.Size = new System.Drawing.Size(538, 258);
             // 
             // 
             // 
@@ -102,9 +104,10 @@
             this.groupPanel1.Controls.Add(this.labelX1);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Font = new System.Drawing.Font("B Titr", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.groupPanel1.Location = new System.Drawing.Point(3, 3);
+            this.groupPanel1.Location = new System.Drawing.Point(4, 3);
+            this.groupPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(424, 274);
+            this.groupPanel1.Size = new System.Drawing.Size(530, 248);
             // 
             // 
             // 
@@ -135,6 +138,7 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Text = "ورود اطلاعات";
+            this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
             // Star3
             // 
@@ -145,9 +149,10 @@
             this.Star3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.Star3.Font = new System.Drawing.Font("B Titr", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Star3.ForeColor = System.Drawing.Color.Red;
-            this.Star3.Location = new System.Drawing.Point(155, 93);
+            this.Star3.Location = new System.Drawing.Point(194, 97);
+            this.Star3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Star3.Name = "Star3";
-            this.Star3.Size = new System.Drawing.Size(20, 30);
+            this.Star3.Size = new System.Drawing.Size(25, 31);
             this.Star3.TabIndex = 7;
             this.Star3.Text = "*";
             this.Star3.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -162,9 +167,10 @@
             this.Star2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.Star2.Font = new System.Drawing.Font("B Titr", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Star2.ForeColor = System.Drawing.Color.Red;
-            this.Star2.Location = new System.Drawing.Point(155, 57);
+            this.Star2.Location = new System.Drawing.Point(194, 60);
+            this.Star2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Star2.Name = "Star2";
-            this.Star2.Size = new System.Drawing.Size(20, 30);
+            this.Star2.Size = new System.Drawing.Size(25, 31);
             this.Star2.TabIndex = 7;
             this.Star2.Text = "*";
             this.Star2.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -179,9 +185,10 @@
             this.Star1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.Star1.Font = new System.Drawing.Font("B Titr", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Star1.ForeColor = System.Drawing.Color.Red;
-            this.Star1.Location = new System.Drawing.Point(155, 23);
+            this.Star1.Location = new System.Drawing.Point(194, 24);
+            this.Star1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Star1.Name = "Star1";
-            this.Star1.Size = new System.Drawing.Size(20, 30);
+            this.Star1.Size = new System.Drawing.Size(25, 31);
             this.Star1.TabIndex = 7;
             this.Star1.Text = "*";
             this.Star1.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -193,9 +200,10 @@
             this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
             this.btnCancel.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(165, 148);
+            this.btnCancel.Location = new System.Drawing.Point(216, 155);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(74, 41);
+            this.btnCancel.Size = new System.Drawing.Size(82, 42);
             this.btnCancel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "انصراف";
@@ -207,9 +215,10 @@
             this.btnLogin.BackColor = System.Drawing.SystemColors.Control;
             this.btnLogin.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.btnLogin.Font = new System.Drawing.Font("B Titr", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnLogin.Location = new System.Drawing.Point(245, 148);
+            this.btnLogin.Location = new System.Drawing.Point(306, 155);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(74, 41);
+            this.btnLogin.Size = new System.Drawing.Size(82, 42);
             this.btnLogin.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "ورود";
@@ -225,9 +234,10 @@
             this.reflectionImage1.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.reflectionImage1.ForeColor = System.Drawing.Color.Black;
             this.reflectionImage1.Image = global::Police.Properties.Resources.password;
-            this.reflectionImage1.Location = new System.Drawing.Point(1, 3);
+            this.reflectionImage1.Location = new System.Drawing.Point(1, -8);
+            this.reflectionImage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.reflectionImage1.Name = "reflectionImage1";
-            this.reflectionImage1.Size = new System.Drawing.Size(142, 213);
+            this.reflectionImage1.Size = new System.Drawing.Size(178, 223);
             this.reflectionImage1.TabIndex = 6;
             // 
             // comboBoxEx1
@@ -242,16 +252,17 @@
             this.comboBoxEx1.Items.AddRange(new object[] {
             this.comboItem1,
             this.comboItem2});
-            this.comboBoxEx1.Location = new System.Drawing.Point(181, 91);
+            this.comboBoxEx1.Location = new System.Drawing.Point(226, 95);
+            this.comboBoxEx1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxEx1.Name = "comboBoxEx1";
             this.comboBoxEx1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBoxEx1.Size = new System.Drawing.Size(118, 32);
+            this.comboBoxEx1.Size = new System.Drawing.Size(148, 32);
             this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxEx1.TabIndex = 2;
             this.comboBoxEx1.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty;
-            this.comboBoxEx1.WatermarkColor = System.Drawing.Color.Black;
+            this.comboBoxEx1.WatermarkColor = System.Drawing.Color.DimGray;
             this.comboBoxEx1.WatermarkFont = new System.Drawing.Font("B Compset", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.comboBoxEx1.WatermarkText = "  انتخاب کنید";
+            this.comboBoxEx1.WatermarkText = "         انتخاب کنید";
             this.comboBoxEx1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBoxEx1_MouseClick);
             // 
             // comboItem1
@@ -276,24 +287,27 @@
             // 
             // 
             // 
+            this.txtPass.Border.BackColor = System.Drawing.Color.Red;
+            this.txtPass.Border.BackColor2 = System.Drawing.Color.Aqua;
             this.txtPass.Border.Class = "TextBoxBorder";
             this.txtPass.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtPass.DisabledBackColor = System.Drawing.Color.White;
             this.txtPass.Font = new System.Drawing.Font("Yanone Kaffeesatz", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.Black;
-            this.txtPass.Location = new System.Drawing.Point(181, 57);
+            this.txtPass.Location = new System.Drawing.Point(226, 60);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPass.MaxLength = 16;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.PreventEnterBeep = true;
             this.txtPass.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPass.Size = new System.Drawing.Size(118, 30);
+            this.txtPass.Size = new System.Drawing.Size(148, 30);
             this.txtPass.TabIndex = 1;
-            this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPass.WatermarkColor = System.Drawing.Color.DimGray;
             this.txtPass.WatermarkFont = new System.Drawing.Font("B Compset", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtPass.WatermarkImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txtPass.WatermarkText = "  کلمه عبور را وارد کنید";
+            this.txtPass.WatermarkText = "کلمه عبور را وارد کنید";
             this.txtPass.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtPass_MouseClick);
             // 
             // txtUser
@@ -302,24 +316,28 @@
             // 
             // 
             // 
+            this.txtUser.Border.BackColor = System.Drawing.Color.Red;
+            this.txtUser.Border.BackColor2 = System.Drawing.Color.Aqua;
             this.txtUser.Border.Class = "TextBoxBorder";
             this.txtUser.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtUser.DisabledBackColor = System.Drawing.Color.White;
+            this.txtUser.FocusHighlightColor = System.Drawing.SystemColors.Info;
             this.txtUser.Font = new System.Drawing.Font("Yanone Kaffeesatz", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.Color.Black;
-            this.txtUser.Location = new System.Drawing.Point(181, 23);
+            this.txtUser.Location = new System.Drawing.Point(226, 24);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtUser.MaxLength = 16;
             this.txtUser.Name = "txtUser";
             this.txtUser.PreventEnterBeep = true;
             this.txtUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtUser.Size = new System.Drawing.Size(118, 30);
+            this.txtUser.Size = new System.Drawing.Size(148, 30);
             this.txtUser.TabIndex = 0;
-            this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtUser.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty;
             this.txtUser.WatermarkColor = System.Drawing.Color.DimGray;
             this.txtUser.WatermarkFont = new System.Drawing.Font("B Compset", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtUser.WatermarkImageAlignment = System.Drawing.ContentAlignment.BottomCenter;
-            this.txtUser.WatermarkText = "  نام کاربری را وارد کنید";
+            this.txtUser.WatermarkText = "نام کاربری را وارد کنید";
             this.txtUser.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtUser_MouseClick);
             // 
             // labelX3
@@ -331,9 +349,10 @@
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Font = new System.Drawing.Font("B Mitra", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelX3.ForeColor = System.Drawing.Color.Black;
-            this.labelX3.Location = new System.Drawing.Point(305, 91);
+            this.labelX3.Location = new System.Drawing.Point(381, 95);
+            this.labelX3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(110, 28);
+            this.labelX3.Size = new System.Drawing.Size(138, 29);
             this.labelX3.TabIndex = 2;
             this.labelX3.Text = "سطح دسترسی :";
             // 
@@ -346,9 +365,10 @@
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("B Mitra", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(305, 57);
+            this.labelX2.Location = new System.Drawing.Point(381, 60);
+            this.labelX2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(110, 28);
+            this.labelX2.Size = new System.Drawing.Size(138, 29);
             this.labelX2.TabIndex = 1;
             this.labelX2.Text = "کلمه عبور :";
             // 
@@ -361,25 +381,26 @@
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("B Mitra", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(305, 23);
+            this.labelX1.Location = new System.Drawing.Point(381, 24);
+            this.labelX1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(110, 28);
+            this.labelX1.Size = new System.Drawing.Size(138, 29);
             this.labelX1.TabIndex = 0;
             this.labelX1.Text = "نام کاربری :";
             // 
             // FrmLogin
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(430, 289);
+            this.ClientSize = new System.Drawing.Size(538, 258);
             this.Controls.Add(this.ribbonClientPanel1);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Zar", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("2  Titr", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -395,8 +416,6 @@
         private DevComponents.DotNetBar.StyleManager styleManager1;
         private DevComponents.DotNetBar.Ribbon.RibbonClientPanel ribbonClientPanel1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtPass;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtUser;
         private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX1;
@@ -409,5 +428,7 @@
         private DevComponents.DotNetBar.LabelX Star3;
         private DevComponents.DotNetBar.LabelX Star2;
         private DevComponents.DotNetBar.LabelX Star1;
+        public DevComponents.DotNetBar.Controls.TextBoxX txtPass;
+        public DevComponents.DotNetBar.Controls.TextBoxX txtUser;
     }
 }

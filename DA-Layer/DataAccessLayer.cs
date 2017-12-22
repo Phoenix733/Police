@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 using DA_Layer;
 
 namespace DA_Layer
@@ -25,7 +26,14 @@ namespace DA_Layer
         public void Connect()
         {
             CON.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Police.mdf;Integrated Security=True;Connect Timeout=30";
-            CON.Open();
+            try
+            {
+                CON.Open();
+            }
+            catch (SqlException EX)
+            {
+                MessageBox.Show(EX.Message);
+            }
         }
         public void Disconnect()
         {

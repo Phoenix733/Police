@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -27,14 +28,13 @@ namespace Police
         private void FrmMain_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            if (Permissions.Permission == 1)
-            {
-               // TypeOfUser.Text = "متصدی";
-            }
+            LblCode.Text = "کد" + LoginHistory.UserCode.ToString();
+            LblUser.Text = LoginHistory.Username;
+            LblName.Text = LoginHistory.Name;
+            if (LoginHistory.Permission == true)
+                LblPermission.Text = "متصدی";
             else
-            {
-               // TypeOfUser.Text = "متقاضی";
-            }
+                LblPermission.Text = "متقاضی";
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -48,6 +48,11 @@ namespace Police
             else
                 LblDay.Text = PersianDate.GetNameDayInMonth();
             LblDate.Text = PersianDate.GetNumberDayInMonth().ToString() + "  " + PersianDate.GetNameMonth() + "  " + PersianDate.GetNumberYear().ToString();
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

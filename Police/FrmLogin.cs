@@ -21,10 +21,11 @@ namespace Police
         {
             Application.Exit();
         }
+        public BusinessLogicLayer Log = new BusinessLogicLayer();
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-            BusinessLogicLayer Log = new BusinessLogicLayer();
+           // BusinessLogicLayer Log = new BusinessLogicLayer();
             if (txtUser.Text == "" && txtPass.Text == "" && comboBoxEx1.SelectedIndex == -1)
             {
                 FarsiMessegeBox.Show("لطفا نام کاربری و کلمه عبور را وارد کنید و همچنین سطح دسترسی خود را مشخص کنید", "خطا ورود اطلاعات");
@@ -69,10 +70,13 @@ namespace Police
             }
             else if (comboBoxEx1.SelectedIndex == 0)
             {
-                Permissions.Permission = 1;
-                Log.Login(Permissions.Permission, txtUser.Text, txtPass.Text);
+                LoginHistory.Permission = true;
+                Log.Login(LoginHistory.Permission, txtUser.Text, txtPass.Text);
                 if (Log.DT.Rows.Count > 0)
                 {
+                    LoginHistory.UserCode = Convert.ToInt32(Log.DT.Rows[0][1].ToString());
+                    LoginHistory.Username = Log.DT.Rows[0][3].ToString();
+                    LoginHistory.Name = Log.DT.Rows[0][5].ToString();
                     this.Hide();
                     FrmMain FormMain = new FrmMain();
                     FormMain.ShowDialog();
@@ -86,10 +90,13 @@ namespace Police
             }
             else
             {
-                Permissions.Permission = 2;
-                Log.Login(Permissions.Permission, txtUser.Text, txtPass.Text);
+                LoginHistory.Permission = false;
+                Log.Login(LoginHistory.Permission, txtUser.Text, txtPass.Text);
                 if (Log.DT.Rows.Count > 0)
                 {
+                    LoginHistory.UserCode = Convert.ToInt32(Log.DT.Rows[0][1].ToString());
+                    LoginHistory.Username = Log.DT.Rows[0][3].ToString();
+                    LoginHistory.Name = Log.DT.Rows[0][5].ToString();
                     this.Hide();
                     FrmMain FormMain = new FrmMain();
                     FormMain.ShowDialog();
@@ -115,6 +122,11 @@ namespace Police
         private void comboBoxEx1_MouseClick(object sender, MouseEventArgs e)
         {
             Star3.Visible = false;
+        }
+
+        private void groupPanel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

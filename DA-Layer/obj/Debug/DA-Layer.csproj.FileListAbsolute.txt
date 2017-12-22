@@ -7,3 +7,9 @@ G:\Users\Phoenix\Documents\Visual Studio 2013\Projects\Police\DA-Layer\bin\Debug
 G:\Users\Phoenix\Documents\Visual Studio 2013\Projects\Police\DA-Layer\obj\Debug\DA-Layer.csprojResolveAssemblyReference.cache
 G:\Users\Phoenix\Documents\Visual Studio 2013\Projects\Police\DA-Layer\obj\Debug\DA-Layer.dll
 G:\Users\Phoenix\Documents\Visual Studio 2013\Projects\Police\DA-Layer\obj\Debug\DA-Layer.pdb
+E:\Git Project\Police\DA-Layer\bin\Debug\DA-Layer.dll
+E:\Git Project\Police\DA-Layer\bin\Debug\DA-Layer.pdb
+E:\Git Project\Police\DA-Layer\bin\Debug\FMessegeBox.dll
+E:\Git Project\Police\DA-Layer\obj\Debug\DA-Layer.csprojResolveAssemblyReference.cache
+E:\Git Project\Police\DA-Layer\obj\Debug\DA-Layer.dll
+E:\Git Project\Police\DA-Layer\obj\Debug\DA-Layer.pdb
