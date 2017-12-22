@@ -50,6 +50,18 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AeroWizard, Version=1.2.3.22616, Culture=neutral, PublicKeyToken=915e74f5d64b8f37, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AeroWizard.dll</HintPath>
+    </Reference>
+    <Reference Include="AITabPanel, Version=2.1.2564.27912, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AITabPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalogClock, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AnalogClock.dll</HintPath>
+    </Reference>
     <Reference Include="CircularProgressBar, Version=2.5.6403.13419, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\CircularProgressBar.dll</HintPath>
@@ -71,6 +83,38 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\FMessegeBox.dll</HintPath>
     </Reference>
+    <Reference Include="GlassButton, Version=1.0.2632.40989, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GlassButton.dll</HintPath>
+    </Reference>
+    <Reference Include="HAMRAHSOFTClock, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HAMRAHSOFTClock.dll</HintPath>
+    </Reference>
+    <Reference Include="HozouriComponent, Version=1.0.3484.16955, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HozouriComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="iconits, Version=1.0.2290.18996, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\iconits.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisMenu, Version=2007.7.28.18, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IrisMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=4f90fce1210833dc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="JalaliCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\JalaliCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Persia, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Persia.dll</HintPath>
+    </Reference>
     <Reference Include="persianCalender, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\persianCalender.dll</HintPath>
@@ -78,6 +122,22 @@
     <Reference Include="PersianDate, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\PersianDate.dll</HintPath>
+    </Reference>
+    <Reference Include="PersianDateControls, Version=1.2.4495.22344, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PersianDateControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PopupControl, Version=1.4.0.968, Culture=neutral, PublicKeyToken=04c10344d6495b18, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PopupControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp, Version=1.0.3509.39435, Culture=neutral, PublicKeyToken=20de82c62b055c88, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SriClocks, Version=1.0.1506.35277, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SriClocks.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -88,6 +148,14 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TxtProNet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TxtProNet.dll</HintPath>
+    </Reference>
+    <Reference Include="VistaClockProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\VistaClockProject.dll</HintPath>
+    </Reference>
     <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, PublicKeyToken=null" />
   </ItemGroup>
   <ItemGroup>
